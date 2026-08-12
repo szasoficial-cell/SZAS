@@ -80,8 +80,8 @@ const PRODUCTS = [
     price: 35000,
     images: ["imagenes/camisa-1.jpg", "imagenes/camisa-2.jpg", "imagenes/camisa-3.jpg", "imagenes/camisa-4.jpg"],
     description: "Prenda SZAS. Selecciona tu talla para continuar.",
-    sizeGuide: "camisa"
-     colors: [
+    sizeGuide: "camisa",
+    colors: [
       { name: "BLANCO", images: ["imagenes/camisa-blanco-1.jpg", "imagenes/camisa-blanco-2.jpg"] },
       { name: "NEGRO", images: ["imagenes/camisa-negro-1.jpg", "imagenes/camisa-negro-2.jpg"] }
     ]
