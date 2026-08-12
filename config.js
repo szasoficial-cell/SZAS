@@ -55,8 +55,8 @@ hoodie: {
       ["XL", "122 cm", "72 cm", "58 cm", "66 cm"],
       ["XXL", "128 cm", "74 cm", "60 cm", "68 cm"]
     ]
-  };
-
+  }
+};
 /* ==========================================================================
    PRODUCTOS
    Para agregar un producto nuevo, copia un bloque { ... } y cambia los datos.
