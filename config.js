@@ -34,17 +34,6 @@ const SIZE_GUIDES = {
       ["XXL", "110–115 cm", "76 cm", "52 cm", "26 cm"]
     ]
   },
-  saco: {
-    title: "GUÍA DE TALLAS — SACO",
-    headers: ["Talla", "Pecho", "Cintura", "Cadera"],
-    rows: [
-      ["S", "92–96 cm", "76–80 cm", "92–96 cm"],
-      ["M", "96–100 cm", "80–84 cm", "96–100 cm"],
-      ["L", "100–105 cm", "84–89 cm", "100–105 cm"],
-      ["XL", "105–110 cm", "89–94 cm", "105–110 cm"],
-      ["XXL", "110–115 cm", "94–99 cm", "110–115 cm"]
-    ]
-  },
 hoodie: {
     title: "GUÍA DE TALLAS — HOODIE",
     headers: ["Talla", "Pecho", "Largo", "Hombro", "Manga"],
@@ -99,15 +88,6 @@ const PRODUCTS = [
     images: ["imagenes/hoodie-1.jpg", "imagenes/hoodie-2.jpg"],
     description: "Hoodie SZAS. Selecciona tu talla para continuar.",
     sizeGuide: "hoodie"
-  },
-  {
-    id: "chaqueta-szas",
-    name: "CHAQUETA / SACO BASICO",
-    category: "OUTERWEAR",
-    price: 70000,
-    images: ["imagenes/chaqueta-1.jpg", "imagenes/chaqueta-2.jpg"],
-    description: "Chaqueta / saco SZAS. Selecciona tu talla para continuar.",
-    sizeGuide: "saco"
   },
   {
     id: "conjunto-szas",
