@@ -77,7 +77,7 @@ const PRODUCTS = [
     id: "camisa-3-drop",
     name: "CAMISA 3 DROP",
     category: "TOPS",
-    price: 65000,
+    price: 35000,
     images: ["imagenes/camisa-1.jpg", "imagenes/camisa-2.jpg"],
     description: "Prenda SZAS. Selecciona tu talla para continuar.",
     sizeGuide: "camisa"
