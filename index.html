@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="SZAS — Intriga y Rebeldía. Tienda oficial.">
+<title>SZAS — Intriga y Rebeldía</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<header class="header">
+  <nav class="nav">
+    <a class="logo" href="#inicio" aria-label="SZAS inicio">SZAS</a>
+    <div class="nav-links" id="navLinks">
+      <a href="#coleccion">COLECCIÓN</a>
+      <a href="#productos">PRODUCTOS</a>
+    </div>
+    <button class="mobile-menu-btn" id="mobileMenuBtn" type="button" aria-label="Abrir menú">MENÚ</button>
+    <button class="cart-btn" id="openCart" type="button" aria-label="Abrir carrito">CARRITO <span id="cartCount">0</span></button>
+  </nav>
+</header>
+
+<main id="inicio">
+<section class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">SZAS / COLOMBIA</div>
+    <h1>INTRIGA<br><span>Y REBELDÍA</span></h1>
+    <p>ROPA CON PERSONALIDAD.</p>
+    <a class="btn light" href="#productos">VER PRODUCTOS</a>
+  </div>
+</section>
+
+<section class="manifesto">
+  <p>SZAS</p>
+  <h2>INTRIGA<br>Y REBELDÍA.</h2>
+</section>
+
+<section class="section" id="coleccion">
+  <div class="section-head collection-head">
+    <div><span class="eyebrow dark-eyebrow">EXPLORA</span><h2>COLECCIÓN</h2></div>
+  </div>
+  <!-- app.js dibuja los botones TODO / TOPS / OUTERWEAR aquí a partir de config.js -->
+  <div class="filters" id="filters" role="tablist" aria-label="Filtrar productos"></div>
+</section>
+
+<section class="section products-section" id="productos">
+  <div class="section-head">
+    <div><span class="eyebrow dark-eyebrow">TIENDA</span><h2>PRODUCTOS</h2></div>
+    <span class="product-count" id="productCount"></span>
+  </div>
+  <!-- app.js dibuja las tarjetas de producto aquí a partir de config.js -->
+  <div class="products" id="products"></div>
+  <div class="empty-state" id="emptyState" hidden>NO HAY PRODUCTOS EN ESTA CATEGORÍA.</div>
+</section>
+
+<section class="info">
+  <div class="info-grid">
+    <div><b>ENVÍOS</b><span>Envíos a toda Colombia. Consulta tiempos y costo antes de confirmar.</span></div>
+    <div><b>COMPRA DIRECTA</b><span>Selecciona producto y talla. Tu pedido se prepara para confirmación.</span></div>
+    <div><b>INTRIGA Y REBELDÍA</b><span>SZAS crece colección tras colección. El catálogo está pensado para evolucionar.</span></div>
+  </div>
+</section>
+</main>
+
+<footer class="footer"><div class="logo">SZAS</div><p>INTRIGA Y REBELDÍA · COLOMBIA</p></footer>
+
+<div class="overlay" id="overlay"></div>
+
+<aside class="cart" id="cart" aria-label="Carrito">
+  <div class="cart-head">
+    <h2>CARRITO</h2>
+    <div class="cart-head-actions">
+      <button class="cart-clear" id="clearCart" type="button">VACIAR</button>
+      <button class="modal-close" id="closeCart" type="button" aria-label="Cerrar" style="position:static;font-size:22px">×</button>
+    </div>
+  </div>
+  <div class="cart-items" id="cartItems"></div>
+  <div class="cart-bottom">
+    <div class="cart-total"><span>TOTAL</span><strong id="cartTotal">$0</strong></div>
+    <button class="btn dark full" id="checkout" type="button">CONTINUAR PEDIDO</button>
+  </div>
+</aside>
+
+<div class="modal-backdrop" id="modalBackdrop"></div>
+
+<section class="product-modal" id="productModal" role="dialog" aria-modal="true" aria-labelledby="detailName">
+  <button class="modal-close" id="closeProduct" type="button" aria-label="Cerrar">×</button>
+  <div class="detail-gallery">
+    <div class="main-photo" id="mainPhoto"></div>
+    <div class="thumbs" id="thumbs"></div>
+  </div>
+  <div class="detail-info">
+    <span class="eyebrow dark-eyebrow" id="detailCategory"></span>
+    <h2 id="detailName"></h2>
+    <div class="detail-price" id="detailPrice"></div>
+    <p id="detailDescription"></p>
+
+    <div class="detail-field" id="colorOptions" hidden>
+      <label>COLOR</label>
+      <div class="color-grid" id="colorGrid"></div>
+    </div>
+
+    <div class="detail-field" id="singleSizeField">
+      <label for="detailSize">TALLA</label>
+      <div class="size-select-row">
+        <select id="detailSize"></select>
+        <button class="size-guide-btn" id="openGuide" type="button">GUÍA DE TALLAS</button>
+      </div>
+    </div>
+
+    <div class="bundle-options" id="bundleOptions" hidden>
+      <label>FORMA DE COMPRA</label>
+      <div class="bundle-grid" id="bundleGrid"></div>
+      <div class="bundle-size" id="bundleFullSizes"></div>
+    </div>
+
+    <div class="quantity">
+      <label>CANTIDAD</label>
+      <div><button id="minus" type="button">−</button><span id="qty">1</span><button id="plus" type="button">+</button></div>
+    </div>
+
+    <div class="detail-actions">
+      <button class="btn dark" id="addDetail" type="button">AÑADIR AL CARRITO</button>
+      <button class="btn outline" id="buyNow" type="button">COMPRAR AHORA</button>
+    </div>
+  </div>
+</section>
+
+<section class="guide-modal" id="guideModal" role="dialog" aria-modal="true" aria-labelledby="guideTitle">
+  <button class="modal-close" id="closeGuide" type="button" aria-label="Cerrar">×</button>
+  <span class="eyebrow dark-eyebrow">MEDIDAS</span><h2 id="guideTitle">GUÍA DE TALLAS</h2>
+  <div class="guide-tabs" id="guideTabs"></div>
+  <div class="guide-table-wrap" id="guideContent"></div>
+</section>
+
+<div class="checkout-modal" id="checkoutModal" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle">
+  <button class="modal-close" id="closeCheckout" type="button" aria-label="Cerrar">×</button>
+  <span class="eyebrow dark-eyebrow">ÚLTIMO PASO</span><h2 id="checkoutTitle">DATOS DEL PEDIDO</h2>
+  <form id="checkoutForm">
+    <label>Nombre completo<input required id="customerName" autocomplete="name"></label>
+    <label>WhatsApp<input required id="customerPhone" inputmode="tel" autocomplete="tel"></label>
+    <label>Ciudad<input required id="customerCity" autocomplete="address-level2"></label>
+    <label>Barrio<input required id="customerNeighborhood"></label>
+    <label>Dirección<input required id="customerAddress" autocomplete="street-address"></label>
+    <label>Notas <textarea id="customerNotes" rows="3" placeholder="Opcional"></textarea></label>
+    <div class="checkout-summary" id="checkoutSummary"></div>
+    <button class="btn dark full" type="submit">ENVIAR PEDIDO POR WHATSAPP</button>
+  </form>
+</div>
+
+<!-- IMPORTANTE: config.js debe cargar ANTES de app.js -->
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
