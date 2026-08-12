@@ -45,12 +45,17 @@ const SIZE_GUIDES = {
       ["XXL", "110–115 cm", "94–99 cm", "110–115 cm"]
     ]
   },
-  hoodie: {
+hoodie: {
     title: "GUÍA DE TALLAS — HOODIE",
-    headers: ["Talla", "Referencia"],
-    rows: SIZES.map(s => [s, "Consultar disponibilidad"])
+    headers: ["Talla", "Pecho", "Largo", "Hombro", "Manga"],
+    rows: [
+      ["S", "104 cm", "66 cm", "52 cm", "60 cm"],
+      ["M", "110 cm", "68 cm", "54 cm", "62 cm"],
+      ["L", "116 cm", "70 cm", "56 cm", "64 cm"],
+      ["XL", "122 cm", "72 cm", "58 cm", "66 cm"],
+      ["XXL", "128 cm", "74 cm", "60 cm", "68 cm"]
+    ]
   }
-};
 
 /* ==========================================================================
    PRODUCTOS
