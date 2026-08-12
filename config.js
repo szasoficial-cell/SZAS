@@ -35,7 +35,7 @@ const SIZE_GUIDES = {
     ]
   },
   saco: {
-    title: "GUÍA DE TALLAS — SACO",
+    title: "GUÍA DE TALLAS — SACO/CHAQUETA",
     headers: ["Talla", "Pecho", "Cintura", "Cadera"],
     rows: [
       ["S", "92–96 cm", "76–80 cm", "92–96 cm"],
@@ -46,7 +46,7 @@ const SIZE_GUIDES = {
     ]
   },
   hoodie: {
-    title: "GUÍA DE TALLAS — HOODIE",
+    title: "GUÍA DE TALLAS — SACO/HOODIE",
     headers: ["Talla", "Referencia"],
     rows: SIZES.map(s => [s, "Consultar disponibilidad"])
   }
@@ -92,7 +92,7 @@ const PRODUCTS = [
     sizeGuide: "hoodie"
   },
   {
-    id: "chaqueta-szas",
+    id: "chaqueta-4-drop",
     name: "CHAQUETA / SACO",
     category: "OUTERWEAR",
     price: 80000,
@@ -101,7 +101,7 @@ const PRODUCTS = [
     sizeGuide: "saco"
   },
   {
-    id: "conjunto-szas",
+    id: "conjunto-4-drop"",
     name: "CONJUNTO SZAS",
     category: "OUTERWEAR",
     bundle: true,
