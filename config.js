@@ -92,7 +92,7 @@ const PRODUCTS = [
     category: "TOPS",
     price: 35000,
     images: ["imagenes/camisa-1.jpg", "imagenes/camisa-2.jpg", "imagenes/camisa-3.jpg", "imagenes/camisa-4.jpg"],
-    description: "Prenda SZAS. Selecciona tu talla para continuar.",
+    description: "Camisa 3 DROP. Selecciona tu talla para continuar.",
     sizeGuide: "camisa",
     colors: [
       { name: "BLANCO", images: ["imagenes/camisa-blanco-1.jpg", "imagenes/camisa-blanco-2.jpg"] },
@@ -110,11 +110,11 @@ const PRODUCTS = [
   },
   {
     id: "chaqueta-szas",
-    name: "CHAQUETA / SACO BASICO",
-    category: "OUTERWEAR",
-    price: 70000,
+    name: "CAMISA 2 DROP",
+    category: "TOPS",
+    price: 65000,
     images: ["imagenes/chaqueta-1.jpg", "imagenes/chaqueta-2.jpg"],
-    description: "Chaqueta / saco SZAS. Selecciona tu talla para continuar.",
+    description: "Camisa 2 DROP. Selecciona tu talla para continuar.",
     sizeGuide: "saco"
   },
   {
