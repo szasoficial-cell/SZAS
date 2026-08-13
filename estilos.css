@@ -57,6 +57,10 @@ a{text-decoration:none;color:inherit}
 .section-head h2{font-size:38px;letter-spacing:-1.5px;margin:8px 0 0}
 .collection-head{margin-bottom:22px}
 
+.products-section{
+  padding-top:30px;
+}
+
 /* ---------- Filtros de colección ---------- */
 .filters{display:flex;gap:8px;flex-wrap:wrap}
 .filter{border:1px solid var(--border-2);background:#fff;padding:12px 19px;font-size:9px;font-weight:800;letter-spacing:1px}
