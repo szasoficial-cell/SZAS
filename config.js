@@ -117,7 +117,7 @@ const PRODUCTS = [
     id: "chaqueta-szas",
     name: "CHAQUETA / SACO BASICO",
     category: "OUTERWEAR",
-    price: 70000,
+    price: 80000,
 
     /* No aparece como producto independiente */
     hidden: true,
