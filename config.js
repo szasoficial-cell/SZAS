@@ -118,7 +118,6 @@ const PRODUCTS = [
   images: ["imagenes/chaqueta-1.jpg", "imagenes/chaqueta-2.jpg"],
   description: "Chaqueta / saco SZAS. Selecciona tu talla para continuar.",
   sizeGuide: "saco"
-},
   },
   {
     id: "conjunto-szas",
