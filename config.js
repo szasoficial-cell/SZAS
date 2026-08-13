@@ -110,12 +110,7 @@ const PRODUCTS = [
   },
   {
     id: "chaqueta-szas",
-    name: "CAMISA 2 DROP",
-    category: "TOPS",
-    price: 65000,
-    images: ["imagenes/chaqueta-1.jpg", "imagenes/chaqueta-2.jpg"],
-    description: "Camisa 2 DROP. Selecciona tu talla para continuar.",
-    sizeGuide: "saco"
+    price: 80000,
   },
   {
     id: "conjunto-szas",
