@@ -71,8 +71,13 @@ document.addEventListener(
 );
 
 /* ---- Filtros / catálogo ---- */
+/* ---- Filtros / catálogo ---- */
 function filteredProducts() {
-  return category === "TODO" ? PRODUCTS : PRODUCTS.filter((p) => p.category === category);
+  const visibleProducts = PRODUCTS.filter((p) => !p.hidden);
+
+  return category === "TODO"
+    ? visibleProducts
+    : visibleProducts.filter((p) => p.category === category);
 }
 
 function renderFilters() {
