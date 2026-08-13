@@ -109,8 +109,16 @@ const PRODUCTS = [
     sizeGuide: "hoodie"
   },
   {
-    id: "chaqueta-szas",
-    price: 80000,
+    {
+  id: "chaqueta-szas",
+  name: "CHAQUETA / SACO BASICO",
+  category: "OUTERWEAR",
+  price: 70000,
+  hidden: true,
+  images: ["imagenes/chaqueta-1.jpg", "imagenes/chaqueta-2.jpg"],
+  description: "Chaqueta / saco SZAS. Selecciona tu talla para continuar.",
+  sizeGuide: "saco"
+},
   },
   {
     id: "conjunto-szas",
